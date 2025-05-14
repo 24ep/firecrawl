@@ -55,6 +55,8 @@ services:
       BLOCK_MEDIA: ${BLOCK_MEDIA}
     networks:
       - backend
+    ports:
+      - "1006":"3000"
 
   api:
     <<: *common-service
