@@ -20,6 +20,11 @@ x-common-env: &common-env
   USE_DB_AUTHENTICATION: "false"
   LOGGING_LEVEL: INFO
 
+  # 🔥 Remove these to fully disable Supabase-based auth:
+  SUPABASE_URL: ""
+  SUPABASE_ANON_TOKEN: ""
+  SUPABASE_SERVICE_TOKEN: ""
+
 services:
   redis:
     image: redis:alpine
